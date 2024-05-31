@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        phpinfo(INFO_LICENSE);
-    ?>
+    <php
+        phpinfo()
+/>
 </body>
 </html>  
