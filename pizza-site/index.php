@@ -12,25 +12,22 @@ naam:        <input name="naam" type="text" placeholder="uw naam" required /> <b
 adres:       <input name="adres" type="text" placeholder="uw adres" required /> <br> 
 postcode:    <input name="postcode" type="text" placeholder="uw postcode" required /> <br> 
 plaats:      <input name="plaats" type="text" placeholder="uw plaats" required /> <br> 
-bezorg datum:<input name="bezorg adres" type="time" required /> <br> 
+bezorg datum:<input name="bezorg adres" type="time" required /> <br> <br>
              
 
 </div>
     <?php
 
-
-$weekdagen = array ('Pizza Margherita', 'Pizza Funghi', 'Pizza Marina', 'Pizza Hawai', 'Pizza Quattro Formaggi');
 $pizza= [
     "Pizza Margherita" => 12.50,
     "Pizza Funghi" => 	12,50,
     "Pizza Marina" => 	13,95,
     "Pizza Hawai"  =>  11,50,
     "Pizza Quattro Formaggi" => 14,50
-
+    
 ];
 
-print_r($pizza);
-echo "<br>";
+
 ?>
 
 <?php
