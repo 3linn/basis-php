@@ -7,24 +7,23 @@
 </head>
 <body>
     <div>
-<form method="post" action="mailto: elinsmit@outlook.com">
-naam:        <input name="naam" type="text" placeholder="uw naam" required /> <br> 
-adres:       <input name="adres" type="text" placeholder="uw adres" required /> <br> 
-postcode:    <input name="postcode" type="text" placeholder="uw postcode" required /> <br> 
-plaats:      <input name="plaats" type="text" placeholder="uw plaats" required /> <br> 
-bezorg datum:<input name="bezorg adres" type="time" required /> <br> <br>
-             
-
-</div>
+<div class="persoonlijkeinfo">
+  <form method="post" action="mailto: elinsmit@outlook.com">
+ naam:        <input name="naam" type="text" placeholder="uw naam" required /> <br> 
+ adres:       <input name="adres" type="text" placeholder="uw adres" required /> <br> 
+ postcode:    <input name="postcode" type="text" placeholder="uw postcode" required /> <br> 
+ plaats:      <input name="plaats" type="text" placeholder="uw plaats" required /> <br> 
+ bezorg datum:<input name="bezorg adres" type="time" required /> <br> <br>
+</div>      
     <?php
 
 $pizza= [
     "Pizza Margherita" => 12.50,
-    "Pizza Funghi" => 	12,50,
+    "Pizza Funghi"  => 	12,50,
     "Pizza Marina" => 	13,95,
     "Pizza Hawai"  =>  11,50,
     "Pizza Quattro Formaggi" => 14,50
-    
+
 ];
 
 
@@ -32,8 +31,7 @@ $pizza= [
 
 <?php
 foreach($pizza as $pizza => $prijs){
-   echo $pizza . "€". $prijs;
-   echo "<input type='number'>"; 
+   echo $pizza . "€". $prijs . "<br><input type='number'>"; 
    echo "<br>";
 }
 ?>
@@ -41,6 +39,5 @@ foreach($pizza as $pizza => $prijs){
 </form>
 <?php
 ?>
-
 </body>
 </html> 
